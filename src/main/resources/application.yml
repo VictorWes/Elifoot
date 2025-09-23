@@ -1,1 +1,19 @@
-spring.application.name=elifoot
+spring:
+  application:
+    name: elifoot
+
+datasource:
+  url: jdbc:postgresql://localhost:5430/elifoot
+  username: postgres
+  password: postgres
+  driver-class-name: org.postgresql.Driver
+jpa:
+  open-in-view: true
+  show-sql: true
+  hibernate:
+    ddl-auto: validate
+  properties:
+    hibernate:
+      format_sql: true;
+flyway:
+  enabled: true
