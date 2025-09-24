@@ -18,7 +18,7 @@ public class Stadium {
     private String name;
     private String city;
     private Integer capacity;
-    private String urlImage;
+    private String urlImg;
 
 
 

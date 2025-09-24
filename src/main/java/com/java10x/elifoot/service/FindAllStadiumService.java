@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class FindStadiumService {
+public class FindAllStadiumService {
 
     private final StadiumRepository stadiumRepository;
 
