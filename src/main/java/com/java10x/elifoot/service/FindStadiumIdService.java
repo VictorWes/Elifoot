@@ -13,10 +13,11 @@ import java.util.Optional;
 public class FindStadiumIdService {
 
     private final StadiumRepository stadiumRepository;
+    private final StadiumMapper stadiumMapper;
 
     public Optional<StadiumResponse> findById(Long id) {
         return stadiumRepository.findById(id)
-                .map(StadiumMapper::toStadiumResponse);
+                .map(stadiumMapper::toStadiumResponse);
     }
 
 
