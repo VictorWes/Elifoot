@@ -1,10 +1,15 @@
 package com.java10x.elifoot.controller.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
-
+@Getter
+@Setter
+@Builder
 public class ClubResponse {
 
     private Long id;

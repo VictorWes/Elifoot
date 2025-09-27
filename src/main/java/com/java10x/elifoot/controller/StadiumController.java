@@ -2,6 +2,7 @@ package com.java10x.elifoot.controller;
 
 import com.java10x.elifoot.controller.request.CreateStadiumRequest;
 import com.java10x.elifoot.controller.response.StadiumResponse;
+import com.java10x.elifoot.entity.Stadium;
 import com.java10x.elifoot.service.CreateStadiumService;
 import com.java10x.elifoot.service.DeleteStadiumService;
 import com.java10x.elifoot.service.FindAllStadiumService;
@@ -40,13 +41,13 @@ public class StadiumController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteStadium(@RequestParam Long id) {
+    public void deleteStadium(@PathVariable Long id) {
         deleteStadiumService.execute(id);
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Optional<StadiumResponse> findById(@PathVariable Long id) {
+    public Stadium findById(@PathVariable Long id) {
         return findStadiumIdService.findById(id);
     }
 }

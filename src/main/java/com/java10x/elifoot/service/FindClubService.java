@@ -1,7 +1,8 @@
 package com.java10x.elifoot.service;
 
-import com.java10x.elifoot.controller.request.ClubRequest;
 import com.java10x.elifoot.controller.response.ClubResponse;
+import com.java10x.elifoot.entity.Club;
+import com.java10x.elifoot.exception.ResourceNotFoundException;
 import com.java10x.elifoot.mapper.ClubMapper;
 import com.java10x.elifoot.repository.ClubRepository;
 import lombok.RequiredArgsConstructor;
@@ -22,4 +23,8 @@ public class FindClubService {
     }
 
 
+    public Club findById(Long id) {
+        return clubRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Club not found with id: " + id));
+    }
 }
