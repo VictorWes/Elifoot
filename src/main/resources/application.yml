@@ -17,3 +17,8 @@ jpa:
       format_sql: true;
 flyway:
   enabled: true
+jwt:
+  public:
+    key: classpath:authz.pub
+  private:
+    key: classpath:authz.pem
