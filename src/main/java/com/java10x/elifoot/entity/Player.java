@@ -20,7 +20,7 @@ public class Player {
 
     @Enumerated(EnumType.STRING)
     private Position position;
-    private int shortNumber;
+    private int shirtNumber;
     private String urlImg;
 
     @ManyToOne

@@ -15,5 +15,5 @@ public class PlayerResponse {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String urlImg;
 
-
+    
 }

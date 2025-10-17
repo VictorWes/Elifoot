@@ -1,4 +1,4 @@
-package com.java10x.elifoot.config;
+package com.java10x.elifoot.config.security;
 
 import com.nimbusds.jose.jwk.JWK;
 import com.nimbusds.jose.jwk.JWKSet;

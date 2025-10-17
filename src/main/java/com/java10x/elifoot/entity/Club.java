@@ -16,7 +16,7 @@ public class Club {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "club_seq")
-    @SequenceGenerator(name = "club_seq", sequenceName = "club_sequence", allocationSize = 1)
+    @SequenceGenerator(name = "club_seq", sequenceName = "club_seq", allocationSize = 1)
     private Long id;
     private String name;
     private LocalDate founded;
