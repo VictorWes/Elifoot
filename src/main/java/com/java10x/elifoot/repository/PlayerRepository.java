@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Long> {
 
-    //    @EntityGraph()
+
     List<Player> findByClubId(Long clubId);
 
 }
